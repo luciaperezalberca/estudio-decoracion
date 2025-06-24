@@ -1,0 +1,54 @@
+---
+const currentYear = new Date().getFullYear()
+import SendEmailIcon from "./icons/SendEmail.astro";
+import WhatsAppIcon from "./icons/WhatsApp.astro";
+import InstagramIcon from "./icons/Instagram.astro";
+---
+
+<footer class="py-20 mt-10 flex flex-col justify-center items-center">
+        <div>
+                <ul class="flex justify-center items-center gap-3">
+                        <li> 
+                                <a 
+                                        href="mailto:luciaperezalberca@gmail.com" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                > 
+                                        <SendEmailIcon class="size-8 hover:opacity-50 hover:scale-110" /> 
+                                </a> 
+                        </li>
+                        <li> 
+                                <a 
+                                        href="https://wa.me/+5491122222222" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                > 
+                                        <WhatsAppIcon class="size-8 hover:opacity-50 hover:scale-110" /> 
+                                </a> 
+                        </li>
+                        <li> 
+                                <a 
+                                        href="https://www.instagram.com/" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                > 
+                                        <InstagramIcon class="size-8 hover:opacity-50 hover:scale-110" /> 
+                                </a> 
+                        </li>
+                </ul>
+        </div>
+        <p class="mt-10 mb-1">
+                Todos los derechos reservados.
+        </p>
+        <span class="text-wrap">
+                &#169; {currentYear}. 
+                <a 
+                        href="https://www.instagram.com/" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="font-bold hover:opacity-50"
+                > 
+                        Trama Estudio. 
+                </a>
+        </span>
+</footer>

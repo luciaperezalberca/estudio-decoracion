@@ -1,16 +1,51 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import '@fontsource/poppins';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout 
+	title="Trama Estudio"
+	description="Te ayudamos con el diseño y la decoración de todos tus espacios.">
+	<main>
+		<div class="carousel w-full" id="home">
+  			<div id="slide1" class="carousel-item w-full">
+    				<img src="images/hero-1.png"
+      				class="w-full" />
+  			</div>
+  			<div id="slide2" class="carousel-item w-full">
+    				<img src="images/hero-2.png"
+      				class="w-full" />
+  			</div>
+		</div>
+
+		<!-- <div class="bg-red">
+			<button class="btn btn-circle bg-black">
+				<a href="#slide1" class="btn btn-circle bg-gray-200"></a>
+			</button>
+			<button class="btn btn-circle bg-black">
+				<a href="#slide2" class="btn btn-circle bg-gray-200"></a>
+			</button>
+		</div> -->
+
+		
+		<div class="flex justify-center items-center gap-x-2 text-xl mt-10" id="decoracion">
+			Decoración
+		</div>
+		<SectionContainer> 
+			
+		</SectionContainer>
+		<div class="flex justify-center items-center gap-x-2 text-xl mt-10" id="diseño">
+			Diseño 
+		</div>
+		<SectionContainer> 
+			
+		</SectionContainer>
+		<div class="flex justify-center items-center gap-x-2 text-xl mt-10 mb-2" id="eventos">
+			Eventos
+		</div>
+		<SectionContainer> 
+			
+		</SectionContainer>	
+	</main>
+</Layout>
