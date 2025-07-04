@@ -3,9 +3,19 @@ const currentYear = new Date().getFullYear()
 import SendEmailIcon from "./icons/SendEmail.astro";
 import WhatsAppIcon from "./icons/WhatsApp.astro";
 import InstagramIcon from "./icons/Instagram.astro";
+import ArrowIcon from './icons/Arrow.astro';
 ---
 
-<footer class="py-20 mt-10 flex flex-col justify-center items-center">
+<footer class="py-20 flex flex-col justify-center items-center">
+        <div class="mb-5">
+                <a 
+                        href="#top" 
+                        class="border px-2 py-1 bg-gray-200/80 rounded-xl flex justify-center items-center gap-1 text-black text-sm hover:text-gray-500 hover:scale-110"
+                        aria-label="Volver arriba"
+                >
+                        Volver arriba <ArrowIcon/>
+                </a>
+        </div>
         <div>
                 <ul class="flex justify-center items-center gap-3">
                         <li> 
@@ -14,16 +24,16 @@ import InstagramIcon from "./icons/Instagram.astro";
                                         target="_blank"
                                         rel="noopener noreferrer"
                                 > 
-                                        <SendEmailIcon class="size-8 hover:opacity-50 hover:scale-110" /> 
+                                        <SendEmailIcon class="size-8 hover:text-red-800 hover:scale-110" /> 
                                 </a> 
                         </li>
                         <li> 
                                 <a 
-                                        href="https://wa.me/+5491122222222" 
+                                        href="https://wa.me/+5491111111111" 
                                         target="_blank"
                                         rel="noopener noreferrer"
                                 > 
-                                        <WhatsAppIcon class="size-8 hover:opacity-50 hover:scale-110" /> 
+                                        <WhatsAppIcon class="size-8 hover:text-green-700 hover:scale-110" /> 
                                 </a> 
                         </li>
                         <li> 
@@ -32,7 +42,7 @@ import InstagramIcon from "./icons/Instagram.astro";
                                         target="_blank"
                                         rel="noopener noreferrer"
                                 > 
-                                        <InstagramIcon class="size-8 hover:opacity-50 hover:scale-110" /> 
+                                        <InstagramIcon class="size-8 hover:text-pink-700 hover:scale-110" /> 
                                 </a> 
                         </li>
                 </ul>
@@ -48,7 +58,7 @@ import InstagramIcon from "./icons/Instagram.astro";
                         rel="noopener noreferrer" 
                         class="font-bold hover:opacity-50"
                 > 
-                        Trama Estudio. 
+                        Trama Estudio 
                 </a>
         </span>
 </footer>
