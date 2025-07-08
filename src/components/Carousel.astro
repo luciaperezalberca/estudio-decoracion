@@ -1,9 +1,9 @@
 ---
 const PROJECTSINTERIOR = [
   {
-    title: 'Living',
+    title: 'Cocina',
     technique: 'Colores vibrantes y naturaleza',
-    image: '/images/ilustracion-home.png',
+    image: '/images/hero-2.jpg',
     item: 'item1'
   },
   {
@@ -13,9 +13,9 @@ const PROJECTSINTERIOR = [
     item: 'item2'
   },
   {
-    title: 'Sala de estar',
-    technique: 'Calidez y figuras geométricas',
-    image: '/images/interiorismo-3.png',
+    title: 'Cocina',
+    technique: 'Madera y tonos cálidos',
+    image: '/images/interiorismo-7.jpg',
     item: 'item3'
   },
   {
@@ -25,15 +25,15 @@ const PROJECTSINTERIOR = [
     item: 'item4'
   },
   {
-    title: 'Living',
-    technique: 'Tonos pasteles y texturas suaves',
-    image: '/images/interiorismo-5.png',
+    title: 'Sala de estar',
+    technique: 'Madera y tonos neutros',
+    image: '/images/interiorismo-8.jpg',
     item: 'item5'
   },
   {
-    title: 'Iluminación',
-    technique: 'Misterio e intimidad',
-    image: '/images/interiorismo-6.jpg',
+    title: 'Detalles',
+    technique: 'Colorimetría y transparencias',
+    image: '/images/interiorismo-11.png',
     item: 'item6'
   },
 ];
@@ -118,14 +118,6 @@ const PROJECTSINTERIOR = [
       updateCarousel();
     });
     updateCarousel();
-
-    let autoplay = setInterval(goNext, 10000);
-    [prevBtn, nextBtn].forEach(btn => {
-      btn.addEventListener('click', () => {
-        clearInterval(autoplay);
-        autoplay = setInterval(goNext, 10000);
-      });
-    });
 
     let touchStartX = 0;
     let touchEndX = 0;
