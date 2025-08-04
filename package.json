@@ -9,7 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@fontsource/poppins": "^5.2.6",
+    "@fontsource-variable/raleway": "^5.2.6",
     "astro": "^5.9.3",
     "daisyui": "^5.0.43"
   },

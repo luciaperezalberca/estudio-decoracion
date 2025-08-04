@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import '@fontsource/poppins';
+import '@fontsource-variable/raleway'; // Supports weights 100-900
 import Contact from '../components/Contact.astro';
 import About from '../components/About.astro';
 import Carousel from '../components/Carousel.astro';
@@ -8,18 +8,21 @@ import Carousel from '../components/Carousel.astro';
 
 <Layout 
 	title="Trama Estudio"
-	description="Te ayudamos con el diseño y la decoración de todos tus espacios.">
+	description="Transformá tu hogar, comercio u oficina en un refugio de confort que te represente.">
 	<main>
-		<section class="relative bg-cover bg-center bg-no-repeat h-[70vh] xl:h-screen w-full py-28 md:py-60 px-10 flex items-center mb-38" style="background-image: url('/images/fondo-nosotras.png');">
+		<section class="relative bg-cover bg-center bg-no-repeat min-h-screen w-full pt-32 px-10 flex items-center mb-38" style="background-image: url('/images/fondo-nosotras.png');">
   
   			<div class="absolute inset-0 bg-white/50 backdrop-blur-xs z-0"></div>
-  			<div class="relative z-10 max-w-5xl w-full text-black text-center md:text-start flex flex-col md:px-40 gap-4 md:items-start items-center">
-    				<h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold max-w-lg uppercase">Interiorismo a medida</h1>
-    				<h2 class="mt-3 text-md sm:text-lg tracking-wide max-w-md">Interiorismo a medida para hogares y espacios comerciales. Cada proyecto tiene su propia voz, nosotras le damos forma.</h2>
+  			<div class="relative z-10 max-w-5xl w-full text-black text-start flex flex-col md:px-20 gap-4 items-start">
+    				<h1 class="text-4xl md:text-6xl font-semibold max-w-2/3">Creando interiores que cuentan historias.</h1>
+    				<h2 class="mt-3 mb-3 text-md tracking-wide max-w-2xl">Transformá tu hogar, comercio u oficina en un refugio de confort que te represente.</h2>
 
     				<div class="flex flex-wrap justify-center items-center gap-4">
-      					<a href="/#interiorismo" class="uppercase border border-[#9A8E7E] shadow-md shadow-[#9A8E7E] text-[#9A8E7E] font-bold text-sm tracking-wider bg-white/70 px-5 py-2 rounded-full hover:bg-white transition-all duration-300">
-        					nuestros proyectos
+      					<a href="/#contacto" class="border border-[#9A8E7E] shadow-md shadow-[#9A8E7E] text-[#9A8E7E] font-semibold text-md tracking-wider bg-white/50 px-5 py-3 hover:bg-white transition-all duration-300">
+        					Contactanos
+      					</a>
+					<a href="/#proyectos" class="border border-[#9A8E7E] shadow-md shadow-[#9A8E7E] text-[#9A8E7E] font-semibold text-md tracking-wider bg-transparent px-5 py-3 hover:bg-white/40 transition-all duration-300">
+        					Ver proyectos
       					</a>
     				</div>
   			</div>
@@ -49,7 +52,7 @@ import Carousel from '../components/Carousel.astro';
 				</div>
   			</div>
 		</section>
-
+		
 		<About />
 		<Contact />
 	</main>
